@@ -16,12 +16,11 @@ def main():
     # Initialize camera
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
-        print("ERROR: Camera not accessible")
+        print("cam ok")
         return
     
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-    print("Camera: OK | Resolution: 1280x720")
     
     frame_count = 0
     start_time = time.time()
